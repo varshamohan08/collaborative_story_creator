@@ -55,8 +55,8 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
-API Endpoints
- - **User Authentication**:
+## API Endpoints
+#### User Authentication
  -  User Registration (Mock Authentication)
 	   -  Endpoint: /signup/
 	   -  Method: POST
@@ -70,20 +70,20 @@ API Endpoints
 	   -  Endpoint: /login/
 	   -  Method: POST
 	   - Payload:
-        ```
-         {
-           "username": "user1",
-           "password": "password123"
-          }
-        ```
-		- Response: Returns an access token on successful login.
+		      ```
+		         {
+		           "username": "user1",
+		           "password": "password123"
+		          }
+		        ```
+    - Response: Returns an access token on successful login.
 
 - Get Current User Info
 	 - Endpoint: /user/
 	 - Method: GET
 	 - Headers:
 	 - Auth: Bearer Token: <access_token>
-2. Story Endpoints (Protected)
+#### Story Endpoints (Protected)
   - Create a New Story
 	  - Endpoint: /story/
 	  - Method: POST
