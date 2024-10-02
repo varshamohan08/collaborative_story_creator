@@ -63,8 +63,8 @@ python manage.py runserver
 	   -  Payload:
 	      ```
           {
-              "username": "user2",
-              "password": "test@123"
+              "username": "",
+              "password": ""
           }
  -  User Login
 	   -  Endpoint: /login/
@@ -72,8 +72,8 @@ python manage.py runserver
 	   - Payload:
 		      ```
 		         {
-		           "username": "user1",
-		           "password": "password123"
+		           "username": "",
+		           "password": ""
 		          }
 		        ```
     - Response: Returns an access token on successful login.
@@ -92,8 +92,8 @@ python manage.py runserver
 	  - Payload: form-data
 	  ```
     {
-      "title": "The Adventures of Django",
-      "content": "Once upon a time...",
+      "title": "",
+      "content": "",
       "image": "<image_file>"
     }
 	  ```
@@ -118,7 +118,7 @@ python manage.py runserver
 	    ```
 	    {
 	      "id": <story_id>,
-	      "content": "And they lived happily ever after..."
+	      "content": ""
 	    }
 	    ```
 
