@@ -57,26 +57,27 @@ python manage.py runserver
 ```
 ## API Endpoints
 #### User Authentication
- -  User Registration (Mock Authentication)
+- User Registration (Mock Authentication)
 	   -  Endpoint: /signup/
 	   -  Method: POST
 	   -  Payload:
-	      ```
-          {
-              "username": "",
-              "password": ""
-          }
- -  User Login
+  ```
+  {
+      "username": "",
+      "password": ""
+  }
+  ```
+- User Login
 	   -  Endpoint: /login/
 	   -  Method: POST
 	   - Payload:
-		      ```
-		         {
-		           "username": "",
-		           "password": ""
-		          }
-		        ```
-    - Response: Returns an access token on successful login.
+  ```
+  {
+      "username": "",
+      "password": ""
+  }
+  ```
+   - Response: Returns an access token on successful login.
 
 - Get Current User Info
 	 - Endpoint: /user/
@@ -84,20 +85,20 @@ python manage.py runserver
 	 - Headers:
 	 - Auth: Bearer Token: <access_token>
 #### Story Endpoints (Protected)
-  - Create a New Story
+- Create a New Story
 	  - Endpoint: /story/
 	  - Method: POST
 	  - Headers:
 	  - Auth: Bearer Token: <access_token>
 	  - Payload: form-data
-	  ```
-    {
+  ```
+  {
       "title": "",
       "content": "",
       "image": "<image_file>"
-    }
-	  ```
-  - Get List of Stories
+  }
+  ```
+- Get List of Stories
 	  - Endpoint: /story/
 	  - Method: GET
 	  - Headers:
@@ -108,19 +109,19 @@ python manage.py runserver
 	- Method: GET
 	- Headers:
 	- Authorization: Bearer <access_token>
-	
- -  Add a Contribution to a Story
+
+- Add a Contribution to a Story
 	 - Endpoint: /story/
 	 - Method: PATCH
 	 - Headers:
 	 - Auth: Bearer Token: <access_token>
 	 - Payload:
-	    ```
-	    {
-	      "id": <story_id>,
-	      "content": ""
-	    }
-	    ```
+  ```
+  {
+      "id": <story_id>,
+      "content": ""
+  }
+  ```
 
 **Image Upload**
 
